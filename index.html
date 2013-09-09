@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link type="text/css" rel="stylesheet" href="normalize.min.css">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/estilo.css">
+		
+		<script src="js/main.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--<script src="js/bootstrap.min.js"></script>-->
+		
+	</head>
+	
+	<body>
+		<script>
+		  
+		  	function agregar(boton) {
+		  		 document.getElementById("num1").value+=(boton.value);
+				
+			  }
+			  
+			function resul () {
+				
+			var campo1 = document.getElementById("num1");	
+		    document.getElementById("num1").value=eval(campo1.value);
+			  alert(eval(campo1.value));
+			}
+			
+			function borrar () {
+			   document.getElementById("num1").value=(" ");
+			}
+			
+		</script>
+		
+		<section id="camposTexto">
+			
+			<p>Casia</p> 
+			<input id="num1" disabled="false" type="text" />
+			
+			
+		</section>
+		
+		<section id="operaciones">
+			
+			<button  type="button" onclick="agregar(this);" value="7" class="btn btn-danger">7</button>
+			<button  type="button" onclick="agregar(this);" value="8" class="btn btn-danger">8</button>
+			<button  type="button" onclick="agregar(this);" value="9" class="btn btn-danger">9</button>
+			
+			<button  type="button" onclick="agregar(this)" value="+" class="btn btn-success">+</button> <br/>
+			<div id="salto"><br /></div>
+			
+			<button  type="button" onclick="agregar(this)" value="4" class="btn btn-danger">4</button>
+			<button  type="button" onclick="agregar(this)" value="5" class="btn btn-danger">5</button>
+			<button  type="button" onclick="agregar(this)" value="6" class="btn btn-danger">6</button>
+			
+			<button  type="button" onclick="agregar(this)" value="-" class="btn btn-success">-</button><br/>
+			<div id="salto2"><br /></div>
+			
+			<button  type="button" onclick="agregar(this)" value="1" class="btn btn-danger">1</button>
+			<button  type="button" onclick="agregar(this)" value="2" class="btn btn-danger">2</button>
+			<button  type="button" onclick="agregar(this)" value="3" class="btn btn-danger">3</button>
+			
+			<button type="button" onclick="agregar(this)"  value="/" class="btn btn-success">/</button> <br />
+			<div id="salto2"><br /></div>
+			
+			<button  type="button" onclick="agregar(this)" value="0" class="btn btn-danger">0</button>
+			<button  type="button" onclick="agregar(this)" value="." class="btn btn-danger">.</button>
+			<button  type="button" onclick="borrar()"   class="btn btn-danger">C</button>
+			<button type="button" onclick="agregar(this)" value="*"  class="btn btn-success">*</button><br/>
+			
+			<button id="igual" type="button" onclick="resul()" class="btn btn-success">=</button>
+			
+			
+			
+		</section>
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,54 @@
+#camposTexto{
+	
+	margin-left: 40%;
+}
+
+#operaciones{
+	
+	margin-left: 40%;
+}
+
+
+button{
+	margin-left: 1%;
+	margin-top: .5%;
+		}
+#igual{
+	
+	padding: 10px 100px;
+	margin-top: 3%;
+	
+}
+
+
+@media screen and (max-width:350px){  
+	
+		
+		#camposTexto{
+			margin-left: 0%;
+		}
+		
+		button{
+			margin-left: 7%;
+			margin-top: 5%;
+			
+		}
+		#operaciones{
+			float: left;
+			margin-top: 0px;
+			margin-left: 0px;
+	
+		}
+		
+		#salto{
+			display: none;
+		}
+		#salto2{
+			display: none;
+		}
+		
+		
+
+		
+	
+}
